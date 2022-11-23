@@ -1,6 +1,5 @@
 import React from "react";
 import SidebarLayout from "../comps/SidebarLayout";
-import { Row, Col, Container } from "react-bootstrap";
 import {
   Card,
   CardContent,
@@ -8,6 +7,7 @@ import {
   Typography,
   CardActionArea,
   CardHeader,
+  Grid,
 } from "@mui/material";
 import { motion } from "framer-motion";
 import PropTypes from "prop-types";
@@ -27,7 +27,7 @@ function TabPanel(props) {
       {...other}
     >
       {value === index && (
-        <Box sx={{ p: 3 }}>
+        <Box sx={{ pl: 1, pb: 3 }}>
           <Typography>{children}</Typography>
         </Box>
       )}
@@ -58,146 +58,41 @@ function Project() {
   return (
     <SidebarLayout>
       <Box sx={{ width: "100%" }}>
-        <Col>
+        <Grid sx={{ m: 2 }}>
           <h3>Project</h3>
-        </Col>
-        <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
-          <Tabs
-            value={value}
-            onChange={handleChange}
-            variant="scrollable"
-            scrollButtons="auto"
-            aria-label="scrollable auto tabs example"
+        </Grid>
+        <Box>
+          <Grid
+            container
+            direction="row"
+            justifyContent="center"
+            alignItems="center"
+            paddingBottom={3}
           >
-            <Tab label="Project-1" {...a11yProps(0)} />
-            <Tab label="Project-2" {...a11yProps(1)} />
-            <Tab label="Project-3" {...a11yProps(2)} />
-          </Tabs>
+            <Tabs
+              value={value}
+              onChange={handleChange}
+              variant="scrollable"
+              scrollButtons="auto"
+              aria-label="scrollable auto tabs example"
+            >
+              <Tab label="Project-1" {...a11yProps(0)} />
+              <Tab label="Project-2" {...a11yProps(1)} />
+              <Tab label="Project-3" {...a11yProps(2)} />
+            </Tabs>
+          </Grid>
         </Box>
         <TabPanel value={value} index={0}>
-          <Container fluid>
-            <Row>
-              <Col
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  padding: 0,
-                  marginRight: 0,
-                  marginLeft: 0,
-                }}
-              >
-                <Card
-                  sx={{
-                    maxWidth: "100%",
-                  }}
-                >
-                  <CardHeader style={{ backgroundColor: "Black" }}></CardHeader>
-                  <CardActionArea>
-                    <CardMedia
-                      component="img"
-                      height="300"
-                      image={require("./Sample.jpg")}
-                      //image="/Sample.jpg"
-                    />
-                    <CardContent style={{ backgroundColor: "black" }}>
-                      <Typography variant="h6" component="div" color="white">
-                        P1
-                      </Typography>
-                    </CardContent>
-                  </CardActionArea>
-                </Card>
-              </Col>
-            </Row>
-          </Container>
-        </TabPanel>
-        <TabPanel value={value} index={1}>
-          <Container fluid>
-            <Row>
-              <Col
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  padding: 0,
-                  marginRight: 0,
-                  marginLeft: 0,
-                }}
-              >
-                <Card
-                  sx={{
-                    maxWidth: "100%",
-                  }}
-                >
-                  <CardHeader style={{ backgroundColor: "Black" }}></CardHeader>
-                  <CardActionArea>
-                    <CardMedia
-                      component="img"
-                      height="300"
-                      image={require("./Sample.jpg")}
-                      //image="/Sample.jpg"
-                    />
-                    <CardContent style={{ backgroundColor: "black" }}>
-                      <Typography variant="h6" component="div" color="white">
-                        P2
-                      </Typography>
-                    </CardContent>
-                  </CardActionArea>
-                </Card>
-              </Col>
-            </Row>
-          </Container>
-        </TabPanel>
-        <TabPanel value={value} index={2}>
-          <Container fluid>
-            <Row>
-              <Col
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  padding: 0,
-                  marginRight: 0,
-                  marginLeft: 0,
-                }}
-              >
-                <Card
-                  sx={{
-                    maxWidth: "100%",
-                  }}
-                >
-                  <CardHeader style={{ backgroundColor: "Black" }}></CardHeader>
-                  <CardActionArea>
-                    <CardMedia
-                      component="img"
-                      height="300"
-                      image={require("./Sample.jpg")}
-                      //image="/Sample.jpg"
-                    />
-                    <CardContent style={{ backgroundColor: "black" }}>
-                      <Typography variant="h6" component="div" color="white">
-                        P3
-                      </Typography>
-                    </CardContent>
-                  </CardActionArea>
-                </Card>
-              </Col>
-            </Row>
-          </Container>
-        </TabPanel>
-      </Box>
-      {/* <Container fluid>
-        <Col>
-          <h3>Project</h3>
-        </Col>
-        <Row>
-          <Col
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              padding: 0,
-            }}
+          <Grid
+            container
+            direction="row"
+            justifyContent="center"
+            alignItems="center"
           >
             <Card
               sx={{
                 maxWidth: "100%",
+                padding: 0,
               }}
             >
               <CardHeader style={{ backgroundColor: "Black" }}></CardHeader>
@@ -210,14 +105,74 @@ function Project() {
                 />
                 <CardContent style={{ backgroundColor: "black" }}>
                   <Typography variant="h6" component="div" color="white">
-                    Lizard
+                    P1
                   </Typography>
                 </CardContent>
               </CardActionArea>
             </Card>
-          </Col>
-        </Row>
-      </Container> */}
+          </Grid>
+        </TabPanel>
+        <TabPanel value={value} index={1}>
+          <Grid
+            container
+            direction="row"
+            justifyContent="center"
+            alignItems="center"
+          >
+            <Card
+              sx={{
+                maxWidth: "100%",
+                padding: 0,
+              }}
+            >
+              <CardHeader style={{ backgroundColor: "Black" }}></CardHeader>
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  height="300"
+                  image={require("./Sample.jpg")}
+                  //image="/Sample.jpg"
+                />
+                <CardContent style={{ backgroundColor: "black" }}>
+                  <Typography variant="h6" component="div" color="white">
+                    P2
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Grid>
+        </TabPanel>
+        <TabPanel value={value} index={2}>
+          <Grid
+            container
+            direction="row"
+            justifyContent="center"
+            alignItems="center"
+          >
+            <Card
+              sx={{
+                maxWidth: "100%",
+                padding: 0,
+              }}
+            >
+              <CardHeader style={{ backgroundColor: "Black" }}></CardHeader>
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  height="300"
+                  image={require("./Sample.jpg")}
+                  //image="/Sample.jpg"
+                />
+                <CardContent style={{ backgroundColor: "black" }}>
+                  <Typography variant="h6" component="div" color="white">
+                    P3
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Grid>
+        </TabPanel>
+      </Box>
     </SidebarLayout>
   );
 }
