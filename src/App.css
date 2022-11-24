@@ -63,3 +63,17 @@ body {
   border-right-style: none;
   border-bottom-style: none;
 }
+
+input[type="text"] {
+  background-color: #1c1c1c;
+  color: white;
+  border: none;
+  margin-top: 10px;
+}
+
+textarea[type="text"] {
+  margin-top: 10px;
+  background-color: #1c1c1c;
+  color: white;
+  border: none;
+}

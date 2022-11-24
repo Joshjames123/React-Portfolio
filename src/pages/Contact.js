@@ -1,8 +1,7 @@
 import React from "react";
 import SidebarLayout from "../comps/SidebarLayout";
 import { motion } from "framer-motion";
-import { Box, Grid, TextField } from "@mui/material";
-import { border, borderColor } from "@mui/system";
+import { Box, Grid, Button } from "@mui/material";
 
 function Contact() {
   return (
@@ -22,7 +21,43 @@ function Contact() {
           alignItems="center"
         >
           <h1>Contact</h1>
-          <Box
+          <Box>
+            <Grid
+              container
+              direction="column"
+              justifyContent="space-around"
+              alignItems="center"
+            >
+              <h5>
+                <input type="text" size="51" placeholder="Your name" />
+              </h5>
+              <h5>
+                <Grid container spacing={2}>
+                  <Grid item xs={6} md={7}>
+                    <input type="text" size="27" placeholder="Your Email" />
+                  </Grid>
+                  <Grid item xs={6} md={5}>
+                    <input type="text" size="17" placeholder="Contact Number" />
+                  </Grid>
+                </Grid>
+              </h5>
+              <h5>
+                <input type="text" size="51" placeholder="Subject" />
+              </h5>
+              <h5>
+                <textarea
+                  type="text"
+                  rows="5"
+                  cols="54"
+                  placeholder="Your Message"
+                />
+              </h5>
+              <h5>
+                <button variant="contained">SEND</button>
+              </h5>
+            </Grid>
+          </Box>
+          {/* <Box
             sx={{
               width: 500,
               maxWidth: "100%",
@@ -98,7 +133,7 @@ function Contact() {
               label="Full Name"
               variant="standard"
             />
-          </Box>
+          </Box> */}
         </Grid>
       </Box>
     </SidebarLayout>
