@@ -110,7 +110,7 @@ function Project() {
                   <CardMedia
                     component="img"
                     height="300"
-                    image={require("./Sample.jpg")}
+                    image={require("./p1.gif")}
                     //image="/Sample.jpg"
                   />
                   <CardContent style={{ backgroundColor: "black" }}>
@@ -140,7 +140,7 @@ function Project() {
                   <CardMedia
                     component="img"
                     height="300"
-                    image={require("./Sample.jpg")}
+                    image={require("./p2.gif")}
                     //image="/Sample.jpg"
                   />
                   <CardContent style={{ backgroundColor: "black" }}>
@@ -170,7 +170,7 @@ function Project() {
                   <CardMedia
                     component="img"
                     height="300"
-                    image={require("./Sample.jpg")}
+                    image={require("./p3.gif")}
                     //image="/Sample.jpg"
                   />
                   <CardContent style={{ backgroundColor: "black" }}>
