@@ -1,141 +1,127 @@
 import React from "react";
 import SidebarLayout from "../comps/SidebarLayout";
 import { motion } from "framer-motion";
-import { Box, Grid, Button } from "@mui/material";
+import { Row, Col, Container, Form, Button } from "react-bootstrap";
 
 function Contact() {
   return (
     <SidebarLayout>
-      <Box
-        sx={{
-          width: "100%",
-          height: "100%",
-          backgroundColor: "black",
-          color: "white",
-        }}
-      >
-        <Grid
-          container
-          direction="column"
-          justifyContent="center"
-          alignItems="center"
+      <Container>
+        <motion.div
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          transition={{
+            type: "spring",
+            stiffness: 260,
+            damping: 10,
+            duration: 20,
+            delay: 0.5,
+          }}
         >
-          <h1>Contact</h1>
-          <Box>
-            <Grid
-              container
-              direction="column"
-              justifyContent="space-around"
-              alignItems="center"
+          <Row>
+            <Col
+              xs
+              md={{ span: 10, offset: 1 }}
+              style={{
+                height: 500,
+                borderWidth: 5,
+                borderColor: "black",
+                borderStyle: "dashed double dashed",
+                borderWidth: "",
+                background: "black",
+                color: "white",
+                padding: 0,
+              }}
             >
-              <h5>
-                <input type="text" size="51" placeholder="Your name" />
-              </h5>
-              <h5>
-                <Grid container spacing={2}>
-                  <Grid item xs={6} md={7}>
-                    <input type="text" size="27" placeholder="Your Email" />
-                  </Grid>
-                  <Grid item xs={6} md={5}>
-                    <input type="text" size="17" placeholder="Contact Number" />
-                  </Grid>
-                </Grid>
-              </h5>
-              <h5>
-                <input type="text" size="51" placeholder="Subject" />
-              </h5>
-              <h5>
-                <textarea
-                  type="text"
-                  rows="5"
-                  cols="54"
-                  placeholder="Your Message"
-                />
-              </h5>
-              <h5>
-                <button variant="contained">SEND</button>
-              </h5>
-            </Grid>
-          </Box>
-          {/* <Box
-            sx={{
-              width: 500,
-              maxWidth: "100%",
-            }}
-          >
-            <TextField
-              fullWidth
-              focused
-              sx={{
-                "& .MuiInputLabel-root": { color: "white" },
-                border: "1px solid white",
-                borderRadius: 1,
-                input: { color: "white" },
-              }}
-              InputProps={{ disableUnderline: true }}
-              label="Full Name"
-              variant="standard"
-            />
-            <Grid container spacing={13}>
-              <Grid item xs={6}>
-                <TextField
-                  focused
-                  sx={{
-                    input: { color: "white" },
-                    "& .MuiInputLabel-root": { color: "white" },
-                    border: "1px solid white",
-                    borderRadius: 1,
-                  }}
-                  InputProps={{ disableUnderline: true }}
-                  label="Full Name"
-                  variant="standard"
-                />
-              </Grid>
-              <Grid item xs={6}>
-                <TextField
-                  focused
-                  sx={{
-                    input: { color: "white" },
-                    "& .MuiInputLabel-root": { color: "white" },
-                    border: "1px solid white",
-                    borderRadius: 1,
-                  }}
-                  InputProps={{ disableUnderline: true }}
-                  label="Full Name"
-                  variant="standard"
-                />
-              </Grid>
-            </Grid>
-            <TextField
-              fullWidth
-              focused
-              sx={{
-                "& .MuiInputLabel-root": { color: "white" },
-                border: "1px solid white",
-                borderRadius: 1,
-                input: { color: "white" },
-              }}
-              InputProps={{ disableUnderline: true }}
-              label="Full Name"
-              variant="standard"
-            />
-            <TextField
-              fullWidth
-              focused
-              rows={4}
-              sx={{
-                "& .MuiInputLabel-root": { color: "white" },
-                border: "1px solid white",
-                borderRadius: 1,
-                input: { color: "white" },
-              }}
-              InputProps={{ disableUnderline: true }}
-              label="Full Name"
-              variant="standard"
-            />
-          </Box> */}
-        </Grid>
-      </Box>
+              <h4
+                style={{
+                  marginTop: 60,
+                  marginBottom: 20,
+                  display: "flex",
+                  justifyContent: "center",
+                }}
+              >
+                Contact
+              </h4>
+              <Col
+                sm="12"
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  padding: 0,
+                }}
+              >
+                <Form>
+                  <Form.Group
+                    className="mb-2"
+                    controlId="exampleForm.ControlInput1"
+                  >
+                    <Form.Control
+                      size="sm"
+                      type="text"
+                      placeholder="Your Name"
+                    />
+                  </Form.Group>
+                  <Form.Group
+                    className="mb-3"
+                    controlId="exampleForm.ControlInput1"
+                  >
+                    <Row>
+                      <Col md={7}>
+                        <Form.Control
+                          size="sm"
+                          type="text"
+                          placeholder="Your Email"
+                        />
+                      </Col>
+                      <Col md={5}>
+                        <Form.Control
+                          size="sm"
+                          type="text"
+                          placeholder="Phone Number"
+                        />
+                      </Col>
+                    </Row>
+                  </Form.Group>
+                  <Form.Group
+                    className="mb-3"
+                    controlId="exampleForm.ControlInput1"
+                  >
+                    <Form.Control
+                      size="sm"
+                      type="text"
+                      placeholder="Your Name"
+                    />
+                  </Form.Group>
+                  <Form.Group
+                    className="mb-3"
+                    controlId="exampleForm.ControlTextarea1"
+                  >
+                    <Form.Control
+                      type="text"
+                      size="sm"
+                      as="textarea"
+                      rows={4}
+                      placeholder="Your Message"
+                    />
+                  </Form.Group>
+                  <Col
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      background: "dark",
+                    }}
+                  >
+                    <Button variant="light" type="text" size="sm">
+                      SEND
+                    </Button>
+                  </Col>
+                </Form>
+              </Col>
+            </Col>
+          </Row>
+        </motion.div>
+      </Container>
     </SidebarLayout>
   );
 }
