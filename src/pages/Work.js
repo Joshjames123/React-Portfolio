@@ -48,7 +48,6 @@ export const Work = () => {
               </Col>
               <Col
                 style={{
-                  borderWidth: 5,
                   borderColor: "black",
                   borderStyle: " Solid none none ",
                   borderWidth: "",

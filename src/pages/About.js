@@ -32,7 +32,6 @@ function About() {
               md={{ span: 10, offset: 1 }}
               style={{
                 height: 500,
-                borderWidth: 5,
                 borderColor: "black",
                 borderStyle: "dashed double dashed",
                 borderWidth: "",
@@ -40,7 +39,7 @@ function About() {
             >
               <h4
                 style={{
-                  marginTop: 100,
+                  marginTop: 80,
                   display: "flex",
                   justifyContent: "center",
                 }}

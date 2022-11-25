@@ -24,7 +24,7 @@ export const Education = () => {
                 flexDirection: "column",
                 justifyContent: "center",
                 paddingBottom: 100,
-                paddingTop: 10,
+                paddingTop: 25,
                 paddingLeft: 0,
               }}
             >
@@ -49,7 +49,6 @@ export const Education = () => {
               </Col>
               <Col
                 style={{
-                  borderWidth: 5,
                   borderColor: "black",
                   borderStyle: " Solid none none ",
                   borderWidth: "",
@@ -75,7 +74,6 @@ export const Education = () => {
               </Col>
               <Col
                 style={{
-                  borderWidth: 5,
                   borderColor: "black",
                   borderStyle: " Solid none none ",
                   borderWidth: "",
