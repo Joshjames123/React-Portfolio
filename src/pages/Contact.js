@@ -1,11 +1,14 @@
 import React from "react";
 import SidebarLayout from "../comps/SidebarLayout";
 import { motion } from "framer-motion";
-import { Row, Col, Container, Form, Button } from "react-bootstrap";
+import { Row, Col, Container, Form, Button, Stack } from "react-bootstrap";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { SiUpwork } from "react-icons/si";
+import * as AiIcons from "react-icons/ai";
+import * as BsIcons from "react-icons/bs";
 
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
@@ -79,7 +82,7 @@ function Contact() {
               >
                 <h4
                   style={{
-                    marginTop: 60,
+                    marginTop: 45,
                     marginBottom: 20,
                     display: "flex",
                     justifyContent: "center",
@@ -172,6 +175,52 @@ function Contact() {
                     </Col>
                   </Form>
                 </Col>
+                <Container fluid="sm">
+                  <Row>
+                    <Col
+                      style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        gap: 7,
+                      }}
+                    >
+                      <a
+                        href="https://www.linkedin.com/in/joshua-james-buerano-9216aaa8/"
+                        target="_blank"
+                      >
+                        <Button variant="outline-light" size="md">
+                          <BsIcons.BsLinkedin />
+                        </Button>
+                      </a>
+                      <a href="https://github.com/Joshjames123" target="_blank">
+                        <Button variant="outline-light" size="md">
+                          <BsIcons.BsGithub />
+                        </Button>
+                      </a>
+                      <a href="mailto: bueranojj@gmail.com" target="_blank">
+                        <Button variant="outline-light" size="md">
+                          <AiIcons.AiOutlineMail />
+                        </Button>
+                      </a>
+                      <a
+                        href="https://www.facebook.com/joshua.buerano/"
+                        target="_blank"
+                      >
+                        <Button variant="outline-light" size="md">
+                          <BsIcons.BsFacebook />
+                        </Button>
+                      </a>
+                      <a
+                        href="https://www.upwork.com/freelancers/~016fe1b54e65f80e5d"
+                        target="_blank"
+                      >
+                        <Button variant="outline-light" size="md">
+                          <SiUpwork />
+                        </Button>
+                      </a>
+                    </Col>
+                  </Row>
+                </Container>
               </Col>
             </Row>
           </motion.div>
