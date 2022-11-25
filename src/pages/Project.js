@@ -110,12 +110,18 @@ function Project() {
                   <CardMedia
                     component="img"
                     height="300"
-                    image={require("./p1.gif")}
+                    src={require("./p1.gif")}
                     //image="/Sample.jpg"
                   />
                   <CardContent style={{ backgroundColor: "black" }}>
-                    <Typography variant="h6" component="div" color="white">
-                      P1
+                    <Typography variant="body1" component="div" color="white">
+                      Portfolio
+                    </Typography>
+                    <Typography variant="body2" component="div" color="white">
+                      First Capstone while I'm in bootcamp.
+                    </Typography>
+                    <Typography variant="caption" color="white">
+                      Tools: HTML, CSS, Bootstrap
                     </Typography>
                   </CardContent>
                 </CardActionArea>
@@ -144,8 +150,14 @@ function Project() {
                     //image="/Sample.jpg"
                   />
                   <CardContent style={{ backgroundColor: "black" }}>
-                    <Typography variant="h6" component="div" color="white">
-                      P2
+                    <Typography variant="body1" component="div" color="white">
+                      Task for my first Client
+                    </Typography>
+                    <Typography variant="body2" component="div" color="white">
+                      Mentoring employee of my client
+                    </Typography>
+                    <Typography variant="caption" color="white">
+                      Tools: HTML, CSS, Reactjs, Next.js
                     </Typography>
                   </CardContent>
                 </CardActionArea>
@@ -174,8 +186,15 @@ function Project() {
                     //image="/Sample.jpg"
                   />
                   <CardContent style={{ backgroundColor: "black" }}>
-                    <Typography variant="h6" component="div" color="white">
-                      P3
+                    <Typography variant="body1" component="div" color="white">
+                      Ecommerce Web Site
+                    </Typography>
+                    <Typography variant="body2" component="div" color="white">
+                      Last Capstone while I'm in bootcamp.
+                    </Typography>
+                    <Typography variant="caption" color="white">
+                      Tools: HTML, CSS, React-Bootstrap, React.js, Nodejs,
+                      Heroku, MongoDB
                     </Typography>
                   </CardContent>
                 </CardActionArea>
