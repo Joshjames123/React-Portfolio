@@ -27,7 +27,7 @@ function TabPanel(props) {
       {...other}
     >
       {value === index && (
-        <Box sx={{ pl: 1, pb: 3 }}>
+        <Box sx={{ pl: 1, pb: 4 }}>
           <Typography>{children}</Typography>
         </Box>
       )}
@@ -58,42 +58,50 @@ function Project() {
   return (
     <SidebarLayout>
       <Box sx={{ width: "100%" }}>
+        {/* <motion.div
+          className="box"
+          initial={{ opacity: 0, scale: 1 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.8,
+            delay: 1,
+            ease: [1, 0.71, 0.2, 1.01],
+          }}
+        > */}
         <Grid sx={{ m: 2 }}>
           <h3>Project</h3>
         </Grid>
+        <Box>
+          <Grid
+            container
+            direction="row"
+            justifyContent="center"
+            alignItems="center"
+            paddingBottom={1}
+          >
+            <Tabs
+              value={value}
+              onChange={handleChange}
+              variant="scrollable"
+              scrollButtons="auto"
+              aria-label="scrollable auto tabs example"
+            >
+              <Tab label="Project-1" {...a11yProps(0)} />
+              <Tab label="Project-2" {...a11yProps(1)} />
+              <Tab label="Project-3" {...a11yProps(2)} />
+            </Tabs>
+          </Grid>
+        </Box>
         <motion.div
-          animate={{
-            scale: [1, 2, 2, 1, 1],
-            rotate: [0, 0, 180, 180, 0],
-            borderRadius: ["0%", "0%", "50%", "50%", "0%"],
-          }}
+          className="box"
+          initial={{ opacity: 0, scale: 1 }}
+          animate={{ opacity: 1, scale: 1 }}
           transition={{
-            duration: 2,
-            ease: "easeInOut",
-            times: [0, 0.2, 0.5, 0.8, 1],
+            duration: 1.5,
+            delay: 1,
+            ease: [1, 0.71, 0.2, 1.01],
           }}
         >
-          <Box>
-            <Grid
-              container
-              direction="row"
-              justifyContent="center"
-              alignItems="center"
-              paddingBottom={3}
-            >
-              <Tabs
-                value={value}
-                onChange={handleChange}
-                variant="scrollable"
-                scrollButtons="auto"
-                aria-label="scrollable auto tabs example"
-              >
-                <Tab label="Project-1" {...a11yProps(0)} />
-                <Tab label="Project-2" {...a11yProps(1)} />
-                <Tab label="Project-3" {...a11yProps(2)} />
-              </Tabs>
-            </Grid>
-          </Box>
           <TabPanel value={value} index={0}>
             <Grid
               container

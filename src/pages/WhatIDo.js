@@ -47,7 +47,7 @@ export const WhatIDo = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{
             duration: 0.8,
-            delay: 2,
+            delay: 1,
             ease: [1, 0.71, 0.2, 1.01],
           }}
         >
