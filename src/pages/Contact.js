@@ -1,7 +1,7 @@
 import React from "react";
 import SidebarLayout from "../comps/SidebarLayout";
 import { motion } from "framer-motion";
-import { Row, Col, Container, Form, Button, Stack } from "react-bootstrap";
+import { Row, Col, Container, Form, Button } from "react-bootstrap";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { toast, ToastContainer } from "react-toastify";

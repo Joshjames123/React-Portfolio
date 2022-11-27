@@ -11,6 +11,8 @@ import { motion } from "framer-motion";
 
 export const WhatIDo = () => {
   const [isHovering, setIsHovering] = useState(false);
+  const [isHovering2, setIsHovering2] = useState(false);
+  const [isHovering3, setIsHovering3] = useState(false);
 
   const handleMouseEnter = () => {
     setIsHovering(true);
@@ -20,19 +22,33 @@ export const WhatIDo = () => {
     setIsHovering(false);
   };
 
+  const handleMouseEnter2 = () => {
+    setIsHovering2(true);
+  };
+
+  const handleMouseLeave2 = () => {
+    setIsHovering2(false);
+  };
+
+  const handleMouseEnter3 = () => {
+    setIsHovering3(true);
+  };
+
+  const handleMouseLeave3 = () => {
+    setIsHovering3(false);
+  };
+
   return (
     <SidebarLayout>
       <Container fluid>
         <motion.div
-          animate={{
-            scale: [1, 2, 2, 1, 1],
-            rotate: [0, 0, 180, 180, 0],
-            borderRadius: ["0%", "0%", "50%", "50%", "0%"],
-          }}
+          className="box"
+          initial={{ opacity: 1, scale: 0.1 }}
+          animate={{ opacity: 1, scale: 1 }}
           transition={{
-            duration: 2,
-            ease: "easeInOut",
-            times: [0, 0.2, 0.5, 0.8, 1],
+            duration: 0.8,
+            delay: 2,
+            ease: [1, 0.71, 0.2, 1.01],
           }}
         >
           <Row>
@@ -70,13 +86,14 @@ export const WhatIDo = () => {
                   <div
                     style={{
                       height: "100%",
-                      borderRadius: 100,
+                      borderRadius: 50,
                       display: "flex",
                       justifyContent: "center",
                       flexDirection: "column",
                       textAlign: "center",
                       backgroundColor: isHovering ? "white" : "black",
                       color: isHovering ? "black" : "white",
+                      paddingTop: 5,
                     }}
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}
@@ -110,16 +127,16 @@ export const WhatIDo = () => {
                   <div
                     style={{
                       height: "100%",
-                      borderRadius: 100,
+                      borderRadius: 50,
                       display: "flex",
                       justifyContent: "center",
                       flexDirection: "column",
                       textAlign: "center",
-                      backgroundColor: isHovering ? "white" : "black",
-                      color: isHovering ? "black" : "white",
+                      backgroundColor: isHovering2 ? "white" : "black",
+                      color: isHovering2 ? "black" : "white",
                     }}
-                    onMouseEnter={handleMouseEnter}
-                    onMouseLeave={handleMouseLeave}
+                    onMouseEnter={handleMouseEnter2}
+                    onMouseLeave={handleMouseLeave2}
                   >
                     <motion.h1
                       whileHover={{ scale: [null, 1.5, 1.4] }}
@@ -151,16 +168,16 @@ export const WhatIDo = () => {
                   <div
                     style={{
                       height: "100%",
-                      borderRadius: 100,
+                      borderRadius: 50,
                       display: "flex",
                       justifyContent: "center",
                       flexDirection: "column",
                       textAlign: "center",
-                      backgroundColor: isHovering ? "white" : "black",
-                      color: isHovering ? "black" : "white",
+                      backgroundColor: isHovering3 ? "white" : "black",
+                      color: isHovering3 ? "black" : "white",
                     }}
-                    onMouseEnter={handleMouseEnter}
-                    onMouseLeave={handleMouseLeave}
+                    onMouseEnter={handleMouseEnter3}
+                    onMouseLeave={handleMouseLeave3}
                   >
                     <motion.h1
                       whileHover={{ scale: [null, 1.5, 1.4] }}

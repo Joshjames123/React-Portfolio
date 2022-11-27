@@ -58,19 +58,21 @@ function Project() {
   return (
     <SidebarLayout>
       <Box sx={{ width: "100%" }}>
+        <Grid sx={{ m: 2 }}>
+          <h3>Project</h3>
+        </Grid>
         <motion.div
-          className="box"
-          initial={{ opacity: 1, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
+          animate={{
+            scale: [1, 2, 2, 1, 1],
+            rotate: [0, 0, 180, 180, 0],
+            borderRadius: ["0%", "0%", "50%", "50%", "0%"],
+          }}
           transition={{
-            duration: 0.8,
-            delay: 1.5,
-            ease: [0, 0.71, 0.2, 1.01],
+            duration: 2,
+            ease: "easeInOut",
+            times: [0, 0.2, 0.5, 0.8, 1],
           }}
         >
-          <Grid sx={{ m: 2 }}>
-            <h3>Project</h3>
-          </Grid>
           <Box>
             <Grid
               container
