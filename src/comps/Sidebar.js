@@ -21,5 +21,3 @@ function Sidebar() {
 }
 
 export default Sidebar;
-
-//next is to do layout grid

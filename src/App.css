@@ -23,7 +23,6 @@ body {
 
 .grid-item1 {
   background-color: black;
-  /* border-radius: 20px; */
   padding: 5px;
   height: 100vh;
   padding-top: 200px;
@@ -31,7 +30,6 @@ body {
 
 .grid-item2 {
   background-color: white;
-  /* border-radius: 20px; */
   padding: 10px;
   height: 100vh;
   padding-top: 90px;
@@ -39,7 +37,6 @@ body {
 
 .grid-item1-1 {
   background-color: #111111;
-  /* border-radius: 20px; */
   padding: 10px;
 }
 

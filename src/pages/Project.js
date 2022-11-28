@@ -58,16 +58,6 @@ function Project() {
   return (
     <SidebarLayout>
       <Box sx={{ width: "100%" }}>
-        {/* <motion.div
-          className="box"
-          initial={{ opacity: 0, scale: 1 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{
-            duration: 0.8,
-            delay: 1,
-            ease: [1, 0.71, 0.2, 1.01],
-          }}
-        > */}
         <Grid sx={{ m: 2 }}>
           <h3>Project</h3>
         </Grid>
@@ -120,8 +110,7 @@ function Project() {
                   <CardMedia
                     component="img"
                     height="300"
-                    src={require("./p1.gif")}
-                    //image="/Sample.jpg"
+                    src={require("../pages/pics/p1.gif")}
                   />
                   <CardContent style={{ backgroundColor: "black" }}>
                     <Typography variant="body1" component="div" color="white">
@@ -156,8 +145,7 @@ function Project() {
                   <CardMedia
                     component="img"
                     height="300"
-                    image={require("./p2.gif")}
-                    //image="/Sample.jpg"
+                    image={require("../pages/pics/p2.gif")}
                   />
                   <CardContent style={{ backgroundColor: "black" }}>
                     <Typography variant="body1" component="div" color="white">
@@ -192,8 +180,7 @@ function Project() {
                   <CardMedia
                     component="img"
                     height="300"
-                    image={require("./p3.gif")}
-                    //image="/Sample.jpg"
+                    image={require("../pages/pics/p3.gif")}
                   />
                   <CardContent style={{ backgroundColor: "black" }}>
                     <Typography variant="body1" component="div" color="white">

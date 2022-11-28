@@ -27,7 +27,7 @@ function Home() {
             <Col md="auto">
               <img
                 className="rounded-circle img-thumbnail"
-                src={require("./jimg_gray.png")}
+                src={require("../pages/pics/jimg_gray.png")}
                 width={380}
                 height={300}
               />

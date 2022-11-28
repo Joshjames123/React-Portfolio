@@ -82,13 +82,26 @@ function Contact() {
               >
                 <h4
                   style={{
-                    marginTop: 45,
-                    marginBottom: 20,
+                    marginTop: 10,
+                    marginBottom: 0,
                     display: "flex",
                     justifyContent: "center",
                   }}
                 >
                   Contact
+                </h4>
+                <h4
+                  style={{
+                    margin: 0,
+                    display: "flex",
+                    justifyContent: "center",
+                  }}
+                >
+                  <img
+                    src={require("../pages/pics/logo-bjjfs.jpg")}
+                    width={60}
+                    height={60}
+                  />
                 </h4>
                 <Col
                   sm="12"
@@ -104,6 +117,7 @@ function Contact() {
                       controlId="exampleForm.ControlInput1"
                     >
                       <Form.Control
+                        mt={0}
                         size="sm"
                         type="text"
                         placeholder="Your Name"
