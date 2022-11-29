@@ -49,7 +49,7 @@ function About() {
               <Col>
                 <h6
                   style={{
-                    marginTop: 65,
+                    marginTop: 64,
                     display: "flex",
                     justifyContent: "center",
                     textAlign: "center",
