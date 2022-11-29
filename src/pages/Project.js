@@ -82,17 +82,18 @@ function Project() {
             </Tabs>
           </Grid>
         </Box>
-        <motion.div
-          className="box"
-          initial={{ opacity: 0, scale: 1 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{
-            duration: 1.5,
-            delay: 1,
-            ease: [1, 0.71, 0.2, 1.01],
-          }}
-        >
-          <TabPanel value={value} index={0}>
+
+        <TabPanel value={value} index={0}>
+          <motion.div
+            className="box"
+            initial={{ opacity: 0, scale: 1 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 1.2,
+              delay: 1,
+              ease: [1, 0.71, 0.2, 1.01],
+            }}
+          >
             <Grid
               container
               direction="row"
@@ -126,8 +127,19 @@ function Project() {
                 </CardActionArea>
               </Card>
             </Grid>
-          </TabPanel>
-          <TabPanel value={value} index={1}>
+          </motion.div>
+        </TabPanel>
+        <TabPanel value={value} index={1}>
+          <motion.div
+            className="box"
+            initial={{ opacity: 0, scale: 1 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 1.2,
+              delay: 1,
+              ease: [1, 0.71, 0.2, 1.01],
+            }}
+          >
             <Grid
               container
               direction="row"
@@ -161,8 +173,19 @@ function Project() {
                 </CardActionArea>
               </Card>
             </Grid>
-          </TabPanel>
-          <TabPanel value={value} index={2}>
+          </motion.div>
+        </TabPanel>
+        <TabPanel value={value} index={2}>
+          <motion.div
+            className="box"
+            initial={{ opacity: 0, scale: 1 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 1.2,
+              delay: 1,
+              ease: [1, 0.71, 0.2, 1.01],
+            }}
+          >
             <Grid
               container
               direction="row"
@@ -197,8 +220,8 @@ function Project() {
                 </CardActionArea>
               </Card>
             </Grid>
-          </TabPanel>
-        </motion.div>
+          </motion.div>
+        </TabPanel>
       </Box>
     </SidebarLayout>
   );
