@@ -112,6 +112,7 @@ function Project() {
                     component="img"
                     height="300"
                     src={require("../pages/pics/p1.gif")}
+                    sx={{ objectFit: "fill" }}
                   />
                   <CardContent style={{ backgroundColor: "black" }}>
                     <Typography variant="body1" component="div" color="white">
@@ -158,6 +159,7 @@ function Project() {
                     component="img"
                     height="300"
                     image={require("../pages/pics/p2.gif")}
+                    sx={{ objectFit: "fill" }}
                   />
                   <CardContent style={{ backgroundColor: "black" }}>
                     <Typography variant="body1" component="div" color="white">
@@ -204,6 +206,7 @@ function Project() {
                     component="img"
                     height="300"
                     image={require("../pages/pics/p3.gif")}
+                    sx={{ objectFit: "fill" }}
                   />
                   <CardContent style={{ backgroundColor: "black" }}>
                     <Typography variant="body1" component="div" color="white">
