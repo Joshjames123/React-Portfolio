@@ -117,6 +117,7 @@ function Contact() {
                       controlId="exampleForm.ControlInput1"
                     >
                       <Form.Control
+                        required
                         mt={0}
                         size="sm"
                         type="text"
@@ -131,6 +132,7 @@ function Contact() {
                       <Row>
                         <Col md={7}>
                           <Form.Control
+                            required
                             size="sm"
                             type="text"
                             placeholder="Your Email"
@@ -139,6 +141,7 @@ function Contact() {
                         </Col>
                         <Col md={5}>
                           <Form.Control
+                            required
                             size="sm"
                             type="text"
                             placeholder="Phone Number"
@@ -152,6 +155,7 @@ function Contact() {
                       controlId="exampleForm.ControlInput1"
                     >
                       <Form.Control
+                        required
                         size="sm"
                         type="text"
                         placeholder="Subject"
@@ -163,6 +167,7 @@ function Contact() {
                       controlId="exampleForm.ControlTextarea1"
                     >
                       <Form.Control
+                        required
                         type="text"
                         size="sm"
                         as="textarea"
