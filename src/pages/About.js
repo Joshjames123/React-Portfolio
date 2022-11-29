@@ -39,7 +39,7 @@ function About() {
             >
               <h4
                 style={{
-                  marginTop: 80,
+                  marginTop: 50,
                   display: "flex",
                   justifyContent: "center",
                 }}
@@ -49,7 +49,7 @@ function About() {
               <Col>
                 <h6
                   style={{
-                    marginTop: 50,
+                    marginTop: 65,
                     display: "flex",
                     justifyContent: "center",
                     textAlign: "center",
