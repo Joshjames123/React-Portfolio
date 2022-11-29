@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import SidebarLayout from "../comps/SidebarLayout";
 import { motion } from "framer-motion";
 import { Row, Col, Container, Form, Button } from "react-bootstrap";
@@ -111,7 +111,7 @@ function Contact() {
                     padding: 0,
                   }}
                 >
-                  <Form ref={form} on onSubmit={sendEmail}>
+                  <Form ref={form} onSubmit={sendEmail}>
                     <Form.Group
                       className="mb-2"
                       controlId="exampleForm.ControlInput1"
