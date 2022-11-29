@@ -10,9 +10,20 @@ function Home() {
       <Container fluid>
         <Row className="justify-content-md-center">
           <Col md={6} xs lg="2">
-            <h1>Hi there!</h1>
-            <h1>I'm Joshua</h1>
-            <h4>Fullstack Web Developer</h4>
+            <motion.div
+              className="box"
+              initial={{ opacity: 0, scale: 1 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{
+                duration: 1.5,
+                delay: 1,
+                ease: [1, 0.71, 0.2, 1.01],
+              }}
+            >
+              <h1>Hi there!</h1>
+              <h1>I'm Joshua</h1>
+              <h4>Fullstack Web Developer</h4>
+            </motion.div>
           </Col>
           <motion.h1
             animate={{ x: [50, 150, 50], opacity: 1, scale: 1 }}
